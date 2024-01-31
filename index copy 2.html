@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+</head>
+
+<body style="margin : 0px; overflow: hidden;">
+  <a-scene>
+    
+    <a-assets>
+      <img id="profil" src="assets/profil.png">
+      <img id="adobe" src="assets/adobe.png">
+      <img id="coder" src="assets/coder.png">
+      <img id="code" src="assets/icones/code.png">
+      <img id="cube" src="assets/icones/cube.png">
+      <img id="music" src="assets/icones/music.png">
+      <img id="para" src="assets/icones/para.png">
+      <img id="picture" src="assets/icones/picture.png">
+      <img id="grid" src="assets/icones/grid.png">
+    </a-assets>
+
+    <a-marker preset="hiro">
+          
+      <a-plane color="#FFAE64" height="20" width="20" material="" geometry="height: 12.58; width: 25" visible="" position="-1.009 0.452 0" rotation="-90 0 0">
+
+      <!-- coté gauche -->
+      <a-plane id="gauche" color="#ECE1CF" height="20" width="20" material="" geometry="height: 12.5; width: 3.75" visible="" position="-10.52142 -0.04991 0.51005">
+        <a-image src="#cube" material="" geometry="width: 0.9" position="0 -2.6 1"></a-image>
+        <a-image src="#code" material="" geometry="height: 0.75" position="0 2.58 1"></a-image>
+        <a-image src="#music" material="" geometry="height: 0.85; width: 0.85" position="0 -4.25 1"></a-image>
+        <a-image src="#para" material="" geometry="height: 0.85; width: 0.85" position="0 4.17 1"></a-image>
+        <a-image src="#picture" material="" geometry="" position="0 0.86238 1"></a-image>
+        <a-image src="#grid" material="" geometry="height: 0.85; width: 0.85" position="0 -0.96 1"></a-image>
+      </a-plane>
+
+
+      <!-- intérieur -->
+
+      <a-box color="#000" depth="10" height="10" width="11" position="0.09565 -0.085 1" material="" geometry="depth: 0.5; width: 15.34" scale="1.01 1 1">
+        <a-box id="photo" color="#F4F7F6" depth="0.5" height="5" width="5" position="-4.82007 2.42473 0.75" material="color: #000000" geometry="height: 4.35; width: 4.35">
+          <a-plane src="#profil" height="1" width="1" position="-0.01 -0.026 1.5" material="" geometry="height: 4.35; width: 4.35"></a-plane>
+        </a-box>
+
+        <a-box color="#F61D16" depth="10" height="10" width="10" position="2.40958 2.38102 1" material="" geometry="depth: 0.5; height: 4.35; width: 9.11" scale="1.01 1 1">
+          <a-box id="nom" color="#000" depth="0.5" height="5" width="20" position="-2.1355 -0.79327 2" material="" scale="1.01 1 1" geometry="height: 1.16; width: 3.87">
+            <a-text value="Sauviat" color="black" text="width: 15; color: #ffffff" position="-1.683 -0.01436 0.605"></a-text>
+          </a-box>
+          <a-box id="prenom" color="#000" depth="0.5" height="5" width="20" position="-2.13908 0.6624 2" material="" scale="1.01 1 1" geometry="height: 1.16; width: 3.87">
+            <a-text value="Marion" color="black" text="width: 15; color: #ffffff" position="-1.68305 -0.01445 0.60491"></a-text>
+          </a-box>
+          <a-box id="bouton" color="#F4F7F6" height="10" width="10" position="1.847 -0.098 1" material="" geometry="height: 1; width: 2.66; depth: 0.5">
+            <a-text value="Mon portfolio" color="#000" text="width: 6.19" position="-0.91991 0.00607 0.3"></a-text>
+          </a-box>
+        </a-box>
+
+
+        <a-box color="#082C5E" depth="10" height="10" width="10" position="-4.78 -2.246 1" material="" geometry="depth: 0.5; height: 4.37; width: 4.28" scale="1.01 1 1">
+          <a-box id="logiciel" color="#082C5E" depth="10" height="10" width="10" position="0.21096 0.04303 1" material="" geometry="depth: 0.5; height: 2.99; width: 3" scale="1.01 1 1">
+            <a-plane src="#adobe" height="1" width="1" position="0.028 0 1" material="" geometry="height: 3; width: 3"></a-plane>
+          </a-box>
+        </a-box>
+
+        <a-box color="#F0DC0C" depth="10" height="10" width="10" position="4.9218 -1.12607 1" material="" geometry="depth: 0.5; height: 2.105; width: 4.4" scale="1.01 1 1">
+          <a-plane src="#coder" height="1" width="1" position="0 0 0.27" material="" geometry="height: 1.71; width: 3.79"></a-plane>
+        </a-box>
+
+        <a-box color="#F4F7F6" depth="10" height="10" width="10" position="0.04686 -1.12399 1" material="" geometry="depth: 0.5; height: 2.095; width: 4.4" scale="1.01 1 1"></a-box>
+
+        <a-box color="#F4F7F6" depth="10" height="10" width="10" position="4.98128 -3.475 1" material="" geometry="depth: 0.5; height: 2.095; width: 4.4" scale="1.01 1 1"></a-box>
+
+        <a-box color="#F51C15" depth="10" height="10" width="10" position="0.03233 -3.451 1" material="" geometry="depth: 0.5; height: 2.095; width: 4.4" scale="1.01 1 1"></a-box>
+      </a-box>
+
+
+      <!-- coté droit -->
+      <a-plane id="droite" color="#ECE1CF" height="20" width="20" material="" geometry="height: 12.5; width: 3.75" visible="" position="40.61 0 0.041">
+        <a-text value="Couleurs :" color="#E65100" text="" position="-1.3 4.02028 0.05"></a-text>
+        <a-text value="Texte" color="#E65100" text="" position="-1.3 3.458 0.05"></a-text>
+        <a-text value="Bg" color="#E65100" text="" position="-1.3 3.09253 0.05"></a-text>
+        <a-text value="Typographies :" color="#E65100" text="" position="-1.3 2.36338 0.05"></a-text>
+        <a-text value="S" color="#E65100" text="" position="-1.3 1.8 0.05"></a-text>
+        <a-text value="M" color="#E65100" text="" position="-0.91972 1.8 0.05"></a-text>
+        <a-text value="L" color="#E65100" text="" position="-0.48248 1.8 0.05"></a-text>
+        <a-text value="XL" color="#E65100" text="" position="-0.15077 1.8 0.05"></a-text>
+      </a-plane>
+
+    </a-plane>
+
+    </a-marker>
+    <a-camera position="0 0 30"></a-camera>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js" integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+  
+    anime({
+    targets:'#droite',
+    position: ['30 0 1.5', '10.61 0 1.5'],
+    duration:3000,
+    easing: 'easeInOutSine',
+    });
+  
+    anime({
+    targets:'#gauche',
+    position: ['-30 0 1.5', '-10.6 0 1.5'],
+    duration:3000,
+    easing: 'easeInOutSine'
+    });
+  
+    anime({
+    targets:'#photo',
+    position: ['-4.82007 2.42473 20', '-4.82007 2.42473 1.5'],
+    duration:3000,
+    easing: 'easeInOutSine',
+    delay: 1500,
+    });
+  
+    anime({
+    targets:'#logiciel',
+    position: ['0.21096 0.04303 20', '0.21096 0.04303 2'],
+    duration:3000,
+    easing: 'easeInOutSine',
+    delay: 5000,
+    });
+  
+    anime({
+    targets:'#nom',
+    position: ['-2.1355 -0.79327 20', '-2.1355 -0.79327 1.5'],
+    duration:3000,
+    easing: 'easeInOutSine',
+    delay: 3000,
+    });
+    anime({
+    targets:'#prenom',
+    position: ['-2.13908 0.6624 20', '-2.13908 0.6624 1.5'],
+    duration:3000,
+    easing: 'easeInOutSine',
+    delay: 3000,
+    });
+    anime({
+    targets:'#bouton',
+    position: ['1.847 -0.098 20', '1.847 -0.098 1.5'],
+    duration:3000,
+    easing: 'easeInOutSine',
+    delay: 3000,
+    });
+  
+  
+    </script>
+</body>
+
+</html>
