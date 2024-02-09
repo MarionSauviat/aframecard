@@ -2,7 +2,7 @@
 
 ## Explication de l'expérience
 
-J'ai designé
+J'ai designé une carte de visite
 
 ## Carte de visite
 
