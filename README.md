@@ -15,6 +15,6 @@ J'ai designé une carte de visite dans le but de représenter qui j'étais. Je m
 
 ## QR code lien acces expérience AR
 
-[acces à l'expérience à partir de la carte de visite](https://marionsauviat.github.io/aframecard/ "Titre")  
+[acces à l'expérience à partir du site](https://marionsauviat.github.io/aframecard/ "Titre")  
 
 ![Carte verso](assets/card/carte-verso.png "Carte verso")
