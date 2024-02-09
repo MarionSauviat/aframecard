@@ -6,7 +6,7 @@ J'ai designé une carte de visite dans le but de représenter qui j'étais. Je m
 
 
 
-<div style="display: flex; width:100vw; justify-content:center; gap:5em; margin:4em">
+<div style="display: flex; width:100vw; justify-content:center; gap:5em; margin-top:4em">
   <img src="assets/card/mondrian.png" alt="Mondrian" title="Mondrian" style="width: 20%; margin-right: 5px;">
   <img src="assets/card/mozilla.png" alt="Mozilla" title="Mozilla" style="width: 20%; margin-left: 5px;">
 </div>
