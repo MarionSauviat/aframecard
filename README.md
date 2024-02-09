@@ -2,7 +2,7 @@
 
 ## Explication de l'expérience
 
-J'ai 
+J'ai designé
 
 ## Carte de visite
 
@@ -10,5 +10,5 @@ J'ai
 
 ## QR code lien acces expérience AR
 
-[texte lié](https://marionsauviat.github.io/aframecard/ "Titre")
+[acces à l'expérience à partir de la carte de visite](https://marionsauviat.github.io/aframecard/ "Titre")
 ![alt text](assets/card/carte-verso.png "Title")
