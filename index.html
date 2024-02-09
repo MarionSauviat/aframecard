@@ -69,7 +69,6 @@
        
               <!-- coté gauche -->
               <a-plane id="gauche" color="#ECE1CF" height="20" width="20" material="" geometry="height: 11.18; width: 2.21" visible="" position="-10.600000000000001 0 2.5">
-                <a-circle id="red-circle" class="collidable" color="red" radius="0.5" position="-0.85051 2.86107 3.95032" material="" geometry=""></a-circle>
                 <a-image src="#cube" material="" geometry="width: 0.9" position="0.773 -2.6 2.5" rotation="0 0 270"></a-image>
                 <a-image src="#code" material="" geometry="height: 0.75" position="0.773 2.58 2.5" rotation="0 0 270"></a-image>
                 <a-image src="#music" material="" geometry="height: 0.85; width: 0.85" position="0.773 -4.25 2.5" rotation="0 0 270"></a-image>
@@ -81,7 +80,7 @@
         
               <!-- intérieur -->
         
-              <a-box color="#000" depth="10" height="10" width="11" position="0.94897 -0.085 2.5" material="" geometry="depth: 0.5; height: 10.55; width: 17.92" scale="1.01 1 1">
+              <a-box color="#000" depth="10" height="10" width="11" position="2 -0.085 2.5" material="" geometry="depth: 0.5; height: 10.55; width: 17.92" scale="1.01 1 1">
                 <a-box id="photo" color="#F4F7F6" depth="0.5" height="5" width="5" position="-4.82007 2.42473 2.5" material="color: #000000" geometry="height: 4.35; width: 4.35">
                   <a-plane src="#profil" height="1" width="1" position="0.22222 -0.13525 1.5" material="" geometry="height: 3.75; width: 3.99" rotation="0 0 270"></a-plane>
                 </a-box>
@@ -116,6 +115,17 @@
                 <a-box color="#F51C15" depth="10" height="10" width="10" position="0.23082 -3.451 2.5" material="" geometry="depth: 0.5; height: 2.095; width: 4.8" scale="1.01 1 1"></a-box>
               </a-box>
         
+
+
+              <a-circle id="red-circle" class="collidable" color="red" radius="0.5" position="-7.96655 2.49735 6" material="" geometry=""></a-circle>
+              <a-circle id="blue-circle" class="collidable" color="blue" radius="0.5" position="-8.06501 0.89228 6" material="" geometry=""></a-circle>
+              <a-circle id="green-circle" class="collidable" color="green" radius="0.5" position="-7.93513 -0.64446 6" material="" geometry=""></a-circle>
+              <a-circle id="beige-circle" class="collidable" color="#FFAE64" radius="0.5" position="-7.92024 -2.20996 6" material="" geometry=""></a-circle> 
+              
+              <a-circle color="black" scale="1.3 1.3 1.3" radius="0.5" position="-8.290 2.49735 5" material="" geometry=""></a-circle>
+              <a-circle color="black" scale="1.3 1.3 1.3" radius="0.5" position="-8.290 0.89228 5" material="" geometry=""></a-circle>
+              <a-circle color="black" scale="1.3 1.3 1.3" radius="0.5" position="-8.290 -0.64446 5" material="" geometry=""></a-circle>
+              <a-circle color="black" scale="1.3 1.3 1.3" radius="0.5" position="-8.290 -2.20996 5" material="" geometry=""></a-circle> 
               
         
             </a-plane>
@@ -182,11 +192,22 @@
  delay: 3000,
  });
 
-
+var bg = document.querySelector('#bg');
 var redCircle = document.querySelector('#red-circle');
 redCircle.addEventListener('click', function () {
-var bg = document.querySelector('#bg');
   bg.setAttribute('color', 'red');
+});
+var greenCircle = document.querySelector('#green-circle');
+greenCircle.addEventListener('click', function () {
+  bg.setAttribute('color', 'green');
+});
+var blueCircle = document.querySelector('#blue-circle');
+blueCircle.addEventListener('click', function () {
+  bg.setAttribute('color', 'blue');
+});
+var beigeCircle = document.querySelector('#beige-circle');
+beigeCircle.addEventListener('click', function () {
+  bg.setAttribute('color', '#FFAE64');
 });
 
  </script>
