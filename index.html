@@ -92,7 +92,7 @@
                   <a-box id="prenom" color="#000" depth="0.5" height="5" width="20" position="-0.769 -0.084 2.5" material="" scale="1.01 1 1" geometry="height: 1.16; width: 3.4" rotation="0 0 270">
                     <a-text value="Marion" color="black" text="width: 15; color: #ffffff" position="-1.062 0.12 2.5"></a-text>
                   </a-box>
-                  <a-box id="bouton" color="#F4F7F6" height="10" width="10" position="1.847 -0.098 2.5" material="" geometry="height: 1; width: 2.66; depth: 0.5" rotation="0 0 270">
+                  <a-box class="collidable" id="bouton" color="#F4F7F6" height="10" width="10" position="1.847 -0.098 2.5" material="" geometry="height: 1; width: 2.66; depth: 0.5" rotation="0 0 270">
                     <a-text value="Mon portfolio" color="#000" text="width: 7.24" position="-0.88546 -0.3 2.5"></a-text>
                   </a-box>
                 </a-box>
@@ -208,6 +208,11 @@ blueCircle.addEventListener('click', function () {
 var beigeCircle = document.querySelector('#beige-circle');
 beigeCircle.addEventListener('click', function () {
   bg.setAttribute('color', '#FFAE64');
+});
+
+var bouton = document.querySelector('#bouton');
+bouton.addEventListener('click', function() {
+    window.location.href = 'https://marionsauviat.myportfolio.com/';
 });
 
  </script>
